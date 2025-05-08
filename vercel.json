@@ -1,0 +1,8 @@
+{
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/app.js", "dest": "/dist/app.js" }
+    ],
+    "buildCommand": "pnpm build",
+    "outputDirectory": "dist"
+  }
