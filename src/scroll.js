@@ -1,18 +1,19 @@
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 import gsap from './gsap'
+import { ScrollTrigger } from './gsap'
 
 // Init
-const lenis = new Lenis({
+const scroll = new Lenis({
   autoRaf: true,
   duration: 1.05,
   autoResize: true,
 })
 
-lenis.on('scroll', ScrollTrigger.update)
+scroll.on('scroll', ScrollTrigger.update)
 gsap.ticker.add((time) => {
-  lenis.raf(time * 1000)
+  scroll.raf(time * 1000)
 })
 gsap.ticker.lagSmoothing(0)
 
-export default lenis
+export default scroll

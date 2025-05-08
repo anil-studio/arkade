@@ -5,7 +5,7 @@
 
 import gsap from './gsap'
 import { defaults, MOTION_CONFIG, ScrollTrigger, SplitText, MM } from './gsap'
-import lenis from './scroll'
+import scroll from './scroll'
 
 export class App {
   static {}

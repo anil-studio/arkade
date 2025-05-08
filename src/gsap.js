@@ -22,7 +22,7 @@ const defaults = {
   duration: MOTION_CONFIG.durationM,
 }
 
-gsap.default(defaults)
+gsap.defaults(defaults)
 
 export default gsap
 export { defaults, MOTION_CONFIG, ScrollTrigger, SplitText, MM }
