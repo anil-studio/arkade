@@ -8,5 +8,7 @@ import { defaults, MOTION_CONFIG, ScrollTrigger, SplitText, MM } from './gsap'
 import scroll from './scroll'
 
 export class App {
-  static {}
+  static {
+    console.log('letsgooooo')
+  }
 }
