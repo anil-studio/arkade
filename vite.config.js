@@ -3,6 +3,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   build: {
+    outDir: 'dist/src',
     rollupOptions: {
       input: resolve(__dirname, 'src/app.js'),
       output: {
