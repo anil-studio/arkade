@@ -3,9 +3,15 @@
  * @version 1.0.0
  */
 
-import gsap from './gsap'
-import { defaults, MOTION_CONFIG, ScrollTrigger, SplitText, MM } from './gsap'
-import scroll from './scroll'
+import gsap from './utils/gsap'
+import {
+  defaults,
+  MOTION_CONFIG,
+  ScrollTrigger,
+  SplitText,
+  MM,
+} from './utils/gsap'
+import scroll from './utils/scroll'
 
 export class App {
   static {
