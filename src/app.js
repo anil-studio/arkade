@@ -12,10 +12,10 @@ import {
   MM,
 } from './utils/gsap'
 import _scroll from './utils/scroll'
+import Faq from './components/faq'
 
 export class App {
   static {
-    console.log('letsgooooo')
-    console.log(_scroll)
+    const homeFaq = new Faq(document.querySelector('.h-faq__list'))
   }
 }
