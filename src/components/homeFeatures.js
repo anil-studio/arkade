@@ -41,6 +41,9 @@ export default function initHomeFeatures() {
         start: 'top 70%',
         scrub: false,
       },
+      onComplete: () => {
+        ScrollTrigger.refresh()
+      },
     })
 
     tl.from(refs.eyebrow, {
