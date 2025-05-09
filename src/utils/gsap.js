@@ -7,12 +7,12 @@ gsap.registerPlugin(ScrollTrigger, SplitText)
 console.log('Projet initialisé')
 
 const MOTION_CONFIG = {
-  easeIn: 'power3.in',
-  easeOut: 'power3.out',
-  easeInOut: 'power3.inOut',
-  durationS: 0.3,
-  durationM: 0.4,
-  durationL: 0.6,
+  easeIn: 'expo.in',
+  easeOut: 'expo.out',
+  easeInOut: 'expo.inOut',
+  durationS: 0.4,
+  durationM: 0.6,
+  durationL: 0.8,
 }
 
 const MM = gsap.matchMedia()

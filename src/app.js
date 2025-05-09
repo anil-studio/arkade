@@ -11,10 +11,11 @@ import {
   SplitText,
   MM,
 } from './utils/gsap'
-import scroll from './utils/scroll'
+import _scroll from './utils/scroll'
 
 export class App {
   static {
     console.log('letsgooooo')
+    console.log(_scroll)
   }
 }
