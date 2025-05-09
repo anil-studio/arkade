@@ -13,9 +13,11 @@ import {
 } from './utils/gsap'
 import _scroll from './utils/scroll'
 import Faq from './components/faq'
+import initHomeFeatures from './components/homeFeatures'
 
 export class App {
   static {
     const homeFaq = new Faq(document.querySelector('.h-faq__list'))
+    const homeFeatures = initHomeFeatures()
   }
 }

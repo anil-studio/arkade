@@ -1,11 +1,5 @@
 import gsap from '../utils/gsap'
-import {
-  defaults,
-  MOTION_CONFIG,
-  ScrollTrigger,
-  SplitText,
-  MM,
-} from '../utils/gsap'
+import { MOTION_CONFIG } from '../utils/gsap'
 
 export default class Faq {
   constructor(container) {
