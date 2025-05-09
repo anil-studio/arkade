@@ -15,7 +15,7 @@ export default function initHomeFeatures() {
     gsap.from(block, {
       scrollTrigger: {
         trigger: row,
-        scrub: 0.8,
+        scrub: true,
         markers: false,
         start: 'top 90%',
         end: 'top 30%',
@@ -26,5 +26,42 @@ export default function initHomeFeatures() {
         ScrollTrigger.refresh()
       },
     })
+  })
+
+  refs.contentBlocks.forEach((block) => {
+    const refs = {
+      eyebrow: block.querySelector('.eyebrow'),
+      title: block.querySelector('.h3'),
+      text: block.querySelector('.text-regular'),
+    }
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: block,
+        start: 'top 70%',
+        scrub: false,
+      },
+    })
+
+    tl.from(refs.eyebrow, {
+      autoAlpha: 0,
+      yPercent: 20,
+    })
+      .from(
+        refs.title,
+        {
+          autoAlpha: 0,
+          yPercent: 20,
+        },
+        '<0.2'
+      )
+      .from(
+        refs.text,
+        {
+          autoAlpha: 0,
+          yPercent: 20,
+        },
+        '<0.2'
+      )
   })
 }
