@@ -14,10 +14,12 @@ import {
 import _scroll from './utils/scroll'
 import Faq from './components/faq'
 import initHomeFeatures from './components/homeFeatures'
+import initHomeHero from './components/homeHero'
 
 export class App {
   static {
-    const homeFaq = new Faq(document.querySelector('.h-faq__list'))
+    const homeHero = initHomeHero()
     const homeFeatures = initHomeFeatures()
+    const homeFaq = new Faq(document.querySelector('.h-faq__list'))
   }
 }

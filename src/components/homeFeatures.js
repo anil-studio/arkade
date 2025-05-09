@@ -1,11 +1,5 @@
 import gsap from '../utils/gsap'
-import {
-  defaults,
-  MOTION_CONFIG,
-  ScrollTrigger,
-  SplitText,
-  MM,
-} from '../utils/gsap'
+import { MOTION_CONFIG, ScrollTrigger } from '../utils/gsap'
 
 export default function initHomeFeatures() {
   const container = document.querySelector('.h-features__layout')
