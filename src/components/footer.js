@@ -12,8 +12,9 @@ export default function initFooter() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container,
-        start: 'top 70%',
+        start: 'bottom 10%',
         scrub: false,
+        markers: true,
       },
     })
 
@@ -25,7 +26,7 @@ export default function initFooter() {
       pixelWord,
       {
         autoAlpha: 0,
-        repeat: 10,
+        repeat: -1,
         yoyo: true,
         duration: MOTION_CONFIG.durationS,
       },
