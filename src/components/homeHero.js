@@ -1,5 +1,5 @@
 import gsap from '../utils/gsap'
-import { MOTION_CONFIG, ScrollTrigger } from '../utils/gsap'
+import { MOTION_CONFIG, ScrollTrigger, ScrambleTextPlugin } from '../utils/gsap'
 
 export default function initHomeHero() {
   const container = document.querySelector('.h-hero__layout')
@@ -46,7 +46,60 @@ export default function initHomeHero() {
         autoAlpha: 0,
         stagger: 0.1,
         // duration: 0.2,
+        onComplete: () => {
+          initScrambleLoop()
+        },
       },
       '<0.4'
     )
+
+  function initScrambleLoop() {
+    const text = container.querySelector('.h-scramble-word')
+
+    const scrambleTl = gsap.timeline({ repeat: -1, ease: 'none' })
+
+    scrambleTl
+      .to(text, {
+        scrambleText: {
+          text: 'Bitcoin',
+          speed: 1,
+        },
+        duration: 2,
+      })
+      .to(text, {
+        scrambleText: {
+          text: 'apps',
+          speed: 1,
+        },
+        duration: 2,
+      })
+      .to(text, {
+        scrambleText: {
+          text: 'finance',
+          speed: 1,
+        },
+        duration: 2,
+      })
+      .to(text, {
+        scrambleText: {
+          text: 'coordination',
+          speed: 1,
+        },
+        duration: 2,
+      })
+      .to(text, {
+        scrambleText: {
+          text: 'trust',
+          speed: 1,
+        },
+        duration: 2,
+      })
+      .to(text, {
+        scrambleText: {
+          text: 'money',
+          speed: 1,
+        },
+        duration: 2,
+      })
+  }
 }
