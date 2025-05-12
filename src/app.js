@@ -16,6 +16,7 @@ import Faq from './components/faq'
 import initHomeFeatures from './components/homeFeatures'
 import initHomeHero from './components/homeHero'
 import initMainBtn from './components/mainBtn'
+import initEyebrows from './components/eyebrow'
 import initFooter from './components/footer'
 
 export class App {
@@ -26,5 +27,6 @@ export class App {
     const homeFaq = new Faq(document.querySelector('.h-faq__list'))
     const mainBtn = initMainBtn()
     const footer = initFooter()
+    const eyebrows = initEyebrows()
   }
 }
