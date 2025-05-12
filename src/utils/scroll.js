@@ -5,7 +5,6 @@ import { ScrollTrigger } from './gsap'
 
 // Init
 const _scroll = new Lenis({
-  autoRaf: true,
   duration: 1.05,
 })
 
