@@ -1,8 +1,9 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SplitText } from 'gsap/SplitText'
+import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin'
 
-gsap.registerPlugin(ScrollTrigger, SplitText)
+gsap.registerPlugin(ScrollTrigger, SplitText, ScrambleTextPlugin)
 
 console.log('Projet initialisé')
 
@@ -25,4 +26,11 @@ const defaults = {
 gsap.defaults(defaults)
 
 export default gsap
-export { defaults, MOTION_CONFIG, ScrollTrigger, SplitText, MM }
+export {
+  defaults,
+  MOTION_CONFIG,
+  ScrollTrigger,
+  SplitText,
+  MM,
+  ScrambleTextPlugin,
+}
