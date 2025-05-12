@@ -14,7 +14,7 @@ export default function initFooter() {
         trigger: container,
         start: 'bottom 10%',
         scrub: false,
-        markers: true,
+        //markers: true,
       },
     })
 
