@@ -82,13 +82,6 @@ export default function initHomeHero() {
       })
       .to(text, {
         scrambleText: {
-          text: 'coordination',
-          speed: 1,
-        },
-        duration: 2,
-      })
-      .to(text, {
-        scrambleText: {
           text: 'trust',
           speed: 1,
         },
