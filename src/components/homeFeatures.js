@@ -45,26 +45,26 @@ export default function initHomeFeatures() {
         ScrollTrigger.refresh()
       },
     })
-
-    tl.from(refs.eyebrow, {
-      autoAlpha: 0,
-      yPercent: 20,
-    })
-      .from(
-        refs.title,
-        {
-          autoAlpha: 0,
-          yPercent: 20,
-        },
-        '<0.2'
-      )
-      .from(
-        refs.text,
-        {
-          autoAlpha: 0,
-          yPercent: 20,
-        },
-        '<0.2'
-      )
+    if (refs.eyebrow) {
+      tl.from(refs.eyebrow, {
+        autoAlpha: 0,
+        yPercent: 20,
+      })
+    }
+    tl.from(
+      refs.title,
+      {
+        autoAlpha: 0,
+        yPercent: 20,
+      },
+      '<0.2'
+    ).from(
+      refs.text,
+      {
+        autoAlpha: 0,
+        yPercent: 20,
+      },
+      '<0.2'
+    )
   })
 }

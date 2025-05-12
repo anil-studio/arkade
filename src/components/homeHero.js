@@ -21,7 +21,7 @@ export default function initHomeHero() {
     stagger: 0.2,
     // duration: 0.2,
   })
-    .from(
+    /*.from(
       refs.titleSquares,
       {
         autoAlpha: 0,
@@ -29,7 +29,7 @@ export default function initHomeHero() {
         duration: 0.2,
       },
       '>-0.4'
-    )
+    )*/
     .from(
       [refs.subtitle, refs.btn],
       {
