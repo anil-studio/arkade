@@ -62,6 +62,7 @@ export default function initHomeHero() {
       .to(text, {
         scrambleText: {
           text: 'Bitcoin',
+          chars: 'lowercase',
           speed: 1,
         },
         duration: 2,
@@ -69,6 +70,7 @@ export default function initHomeHero() {
       .to(text, {
         scrambleText: {
           text: 'apps',
+          chars: 'lowercase',
           speed: 1,
         },
         duration: 2,
@@ -76,6 +78,7 @@ export default function initHomeHero() {
       .to(text, {
         scrambleText: {
           text: 'finance',
+          chars: 'lowercase',
           speed: 1,
         },
         duration: 2,
@@ -83,6 +86,7 @@ export default function initHomeHero() {
       .to(text, {
         scrambleText: {
           text: 'trust',
+          chars: 'lowercase',
           speed: 1,
         },
         duration: 2,
@@ -90,6 +94,7 @@ export default function initHomeHero() {
       .to(text, {
         scrambleText: {
           text: 'money',
+          chars: 'lowercase',
           speed: 1,
         },
         duration: 2,
