@@ -42,7 +42,7 @@ export default function initHomeFeatures() {
         scrub: false,
       },
       onComplete: () => {
-        ScrollTrigger.refresh()
+        ScrollTrigger.update()
       },
     })
     if (refs.eyebrow) {
