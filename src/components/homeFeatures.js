@@ -23,7 +23,7 @@ export default function initHomeFeatures() {
       yPercent: 30,
       duration: MOTION_CONFIG.durationL,
       onComplete: () => {
-        ScrollTrigger.refresh()
+        ScrollTrigger.update()
       },
     })
   })
