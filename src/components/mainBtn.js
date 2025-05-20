@@ -18,7 +18,8 @@ export default function initMainBtn() {
     tl.to(inner, {
       y: '0.375em',
     })
-      .to(
+    if (icon.top) {
+      tl.to(
         [icon.top, icon.bottom],
         {
           xPercent: 100,
@@ -26,24 +27,25 @@ export default function initMainBtn() {
         },
         '0.1'
       )
-      .to(icon.top, {
-        yPercent: 100,
-        duration: MOTION_CONFIG.durationS,
-      })
-      .to(
-        icon.bottom,
-        {
-          yPercent: -100,
+        .to(icon.top, {
+          yPercent: 100,
           duration: MOTION_CONFIG.durationS,
-        },
-        '<'
-      )
-      .to([icon.top, icon.middle, icon.bottom], {
-        autoAlpha: 0,
-        repeat: 10,
-        yoyo: true,
-        duration: MOTION_CONFIG.durationS,
-      })
+        })
+        .to(
+          icon.bottom,
+          {
+            yPercent: -100,
+            duration: MOTION_CONFIG.durationS,
+          },
+          '<'
+        )
+        .to([icon.top, icon.middle, icon.bottom], {
+          autoAlpha: 0,
+          repeat: 10,
+          yoyo: true,
+          duration: MOTION_CONFIG.durationS,
+        })
+    }
 
     btn.addEventListener('mouseenter', () => {
       tl.timeScale(1).play()
