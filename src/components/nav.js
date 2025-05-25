@@ -37,13 +37,14 @@ export default function initNav() {
     MM.add('(max-width: 480px)', () => {
       const btn = nav.querySelector('.nav__btn')
       const lines = btn.querySelectorAll('.nav__btn-line')
+      const closedHeight = '3.75em'
 
-      gsap.set(nav, { height: '3.5em' })
+      gsap.set(nav, { height: closedHeight })
 
       const tl = gsap.timeline({ paused: true })
 
       tl.to(nav, {
-        height: isOpen ? '3.5em' : 'auto',
+        height: isOpen ? closedHeight : 'auto',
         duration: MOTION_CONFIG.durationL,
         ease: MOTION_CONFIG.easeInOut,
       })
