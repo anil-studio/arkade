@@ -5,7 +5,7 @@ import { ScrollTrigger } from './gsap'
 
 // Init
 const _scroll = new Lenis({
-  duration: 1.05,
+  duration: 0.6,
 })
 
 _scroll.on('scroll', ScrollTrigger.update)
