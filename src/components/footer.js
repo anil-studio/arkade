@@ -72,18 +72,21 @@ export default function initFooter() {
       })
     }
 
-    let throttleTimer
-    container.addEventListener('mousemove', () => {
-      // Throttle pour éviter de déclencher trop souvent
-      if (!throttleTimer) {
-        throttleTimer = setTimeout(() => {
-          throttleTimer = null
-          changeRandomSvg()
-        }, 100) // Changer toutes les 300ms au maximum
-      }
-    })
+    // Lancer la boucle automatique
+    const autoChangeInterval = setInterval(() => {
+      changeRandomSvg()
+    }, 200) // Changer toutes les 2 secondes
+
+    // Optionnel : nettoyer l'interval si nécessaire
+    // (par exemple si le composant est détruit)
+    return () => {
+      clearInterval(autoChangeInterval)
+    }
   }
 
   initFooterTitle()
-  initFooterSvg()
+  const cleanup = initFooterSvg()
+
+  // Retourner la fonction de cleanup si nécessaire
+  return cleanup
 }
