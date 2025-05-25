@@ -12,9 +12,9 @@ export default function initFooter() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container,
-        start: 'bottom 10%',
+        start: 'bottom 20%',
         scrub: false,
-        //markers: true,
+        markers: false,
       },
     })
 
