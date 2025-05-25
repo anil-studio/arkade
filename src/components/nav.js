@@ -47,15 +47,22 @@ export default function initNav() {
         duration: MOTION_CONFIG.durationL,
         ease: MOTION_CONFIG.easeInOut,
       })
-        .to(lines[0], {
-          yPercent: isOpen ? 100 : 0,
-          duration: MOTION_CONFIG.durationL,
-          ease: MOTION_CONFIG.easeInOut,
-        })
-        .to(lines[1], {
-          yPercent: isOpen ? -100 : 0,
-          duration: MOTION_CONFIG.durationM,
-        })
+        .to(
+          lines[0],
+          {
+            yPercent: isOpen ? 0 : 150,
+            duration: MOTION_CONFIG.durationS,
+          },
+          '<'
+        )
+        .to(
+          lines[1],
+          {
+            yPercent: isOpen ? 0 : -150,
+            duration: MOTION_CONFIG.durationS,
+          },
+          '<'
+        )
 
       btn.addEventListener('click', () => {
         isOpen = !isOpen
