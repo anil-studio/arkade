@@ -41,8 +41,8 @@ export default function initMainBtn() {
         )
         .to([icon.top, icon.middle, icon.bottom], {
           autoAlpha: 0,
-          repeat: 10,
-          yoyo: true,
+          repeat: 20,
+          yoyo: false,
           duration: MOTION_CONFIG.durationS,
         })
     }
@@ -52,7 +52,7 @@ export default function initMainBtn() {
     })
 
     btn.addEventListener('mouseleave', () => {
-      tl.progress(0.25)
+      tl.progress(0.125)
       tl.timeScale(1.5).reverse()
     })
   })
