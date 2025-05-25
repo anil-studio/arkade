@@ -59,7 +59,6 @@ export default function initNav() {
 
       btn.addEventListener('click', () => {
         isOpen = !isOpen
-        console.log(isOpen)
         isOpen ? tl.timeScale(1).play() : tl.timeScale(1.75).reverse()
       })
     })
