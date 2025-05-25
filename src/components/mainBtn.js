@@ -42,7 +42,7 @@ export default function initMainBtn() {
         .to([icon.top, icon.middle, icon.bottom], {
           autoAlpha: 0,
           repeat: 20,
-          yoyo: false,
+          yoyo: true,
           duration: MOTION_CONFIG.durationS,
         })
     }
