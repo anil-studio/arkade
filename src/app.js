@@ -19,6 +19,7 @@ import initMainBtn from './components/mainBtn'
 import initEyebrows from './components/eyebrow'
 import initFooter from './components/footer'
 import initNav from './components/nav'
+import initFadeList from './utils/animations/fadeList'
 
 export class App {
   static {
@@ -30,5 +31,6 @@ export class App {
     const mainBtn = initMainBtn()
     const footer = initFooter()
     const eyebrows = initEyebrows()
+    const fadeList = initFadeList()
   }
 }
